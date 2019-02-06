@@ -1,0 +1,100 @@
+{
+  "name" : "p1",
+  "type" : "page",
+  "displayName" : "Basic Template",
+  "controller" : "AppC",
+  "containerSpecs" : [
+    {
+      "name" : "row_1",
+      "autoNav" : false,
+      "childrenSpecs" : [
+        {
+          "name" : "nav1_1",
+          "autoNav" : false,
+          "css" : {
+            "flex-grow" : 1
+          },
+          "reference" : "nav1",
+          "tag" : "userDefined",
+          "trigger" : "_initial_",
+          "type" : "view"
+        }
+      ],
+      "cssClass" : "trillo-container-row",
+      "type" : "row"
+    },
+    {
+      "name" : "headerRow",
+      "autoNav" : false,
+      "childrenSpecs" : [
+        {
+          "name" : "column_1",
+          "autoNav" : false,
+          "childrenSpecs" : [
+            {
+              "name" : "f1_1",
+              "autoNav" : false,
+              "css" : {
+                "flex-grow" : 1
+              },
+              "reference" : "f1",
+              "tag" : "userDefined",
+              "trigger" : "_initial_",
+              "type" : "view"
+            }
+          ],
+          "cssClass" : "trillo-container-column",
+          "flexGrow" : "1",
+          "type" : "column"
+        }
+      ],
+      "cssClass" : "trillo-container-row",
+      "designTimeHeight" : "49px",
+      "type" : "row"
+    },
+    {
+      "name" : "mainRow",
+      "autoNav" : false,
+      "childrenSpecs" : [
+        {
+          "name" : "mainContentArea",
+          "autoNav" : false,
+          "childrenSpecs" : [
+            {
+              "name" : "row_2",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "tab1_1",
+                  "autoNav" : false,
+                  "css" : {
+                    "flex-grow" : 1
+                  },
+                  "reference" : "tab1",
+                  "tag" : "userDefined",
+                  "trigger" : "_initial_",
+                  "type" : "view"
+                }
+              ],
+              "cssClass" : "trillo-container-row",
+              "type" : "row"
+            }
+          ],
+          "cssClass" : "trillo-container-column",
+          "designTimeHeight" : "100px",
+          "flexGrow" : "1",
+          "main" : true,
+          "type" : "column"
+        }
+      ],
+      "cssClass" : "trillo-container-row",
+      "flexGrow" : "1",
+      "main" : true,
+      "type" : "row"
+    }
+  ],
+  "css" : {
+    "padding" : "0px 20px"
+  },
+  "cssClass" : "trillo-container"
+}

@@ -1,0 +1,19 @@
+{
+  "docUrl" : "/_model/api-service/app1/d3",
+  "name" : "d3",
+  "routeSpecs" : [
+    {
+      "location" : "https://uat13.datacubes.io",
+      "path" : "/svc/app1/d3/api/companies",
+      "secure" : true
+    },
+    {
+      "location" : "https://uat13.datacubes.io",
+      "path" : "/svc/app1/d3/api/overview",
+      "secure" : true
+    }
+  ],
+  "type" : "externalService",
+  "useHttps" : true,
+  "useOAuth" : false
+}

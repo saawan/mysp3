@@ -1,0 +1,103 @@
+{
+  "name" : "app2",
+  "type" : "page",
+  "displayName" : "Blank Template",
+  "controller" : "AppC",
+  "containerSpecs" : [
+    {
+      "name" : "mainRow",
+      "autoNav" : false,
+      "childrenSpecs" : [
+        {
+          "name" : "mainContentArea",
+          "autoNav" : false,
+          "childrenSpecs" : [
+            {
+              "name" : "row_3",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "column_1",
+                  "autoNav" : false,
+                  "childrenSpecs" : [
+                    {
+                      "name" : "nav1_2",
+                      "autoNav" : false,
+                      "css" : {
+                        "flex-grow" : 1
+                      },
+                      "reference" : "nav1",
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_",
+                      "type" : "view"
+                    }
+                  ],
+                  "cssClass" : "trillo-container-column",
+                  "flexGrow" : "1",
+                  "type" : "column"
+                }
+              ],
+              "cssClass" : "trillo-container-row",
+              "tag" : "userDefined",
+              "trigger" : "_initial_",
+              "type" : "row"
+            },
+            {
+              "name" : "row_4",
+              "autoNav" : false,
+              "childrenSpecs" : [
+                {
+                  "name" : "column_2",
+                  "autoNav" : false,
+                  "childrenSpecs" : [
+                    {
+                      "name" : "f1_1",
+                      "autoNav" : false,
+                      "css" : {
+                        "flex-grow" : 1
+                      },
+                      "reference" : "f1",
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_",
+                      "type" : "view"
+                    },
+                    {
+                      "name" : "row_1",
+                      "autoNav" : false,
+                      "cssClass" : "trillo-container-row",
+                      "tag" : "userDefined",
+                      "trigger" : "_initial_",
+                      "type" : "row"
+                    }
+                  ],
+                  "cssClass" : "trillo-container-column",
+                  "flexGrow" : "1",
+                  "type" : "column"
+                }
+              ],
+              "cssClass" : "trillo-container-row",
+              "tag" : "userDefined",
+              "trigger" : "_initial_",
+              "type" : "row"
+            }
+          ],
+          "cssClass" : "trillo-container-column",
+          "designTimeHeight" : "100px",
+          "flexGrow" : "1",
+          "main" : true,
+          "tag" : "templateE",
+          "type" : "column"
+        }
+      ],
+      "cssClass" : "trillo-container-row",
+      "flexGrow" : "1",
+      "main" : true,
+      "tag" : "templateE",
+      "type" : "row"
+    }
+  ],
+  "css" : {
+    "padding" : "0px 20px"
+  },
+  "cssClass" : "trillo-container"
+}

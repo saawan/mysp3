@@ -1,0 +1,64 @@
+{
+  "name" : "f1",
+  "childrenSpecs" : [
+    {
+      "name" : "S",
+      "type" : "start",
+      "testBody" : {
+        "firstname" : "Saqib",
+        "lastname" : "Awan"
+      },
+      "outputSchema" : {
+        "type" : "object",
+        "properties" : {
+          "firstname" : {
+            "type" : "string"
+          },
+          "lastname" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    {
+      "name" : "activity1",
+      "type" : "activity",
+      "displayName" : "activity1",
+      "activityType" : "script",
+      "expressions" : [
+        {
+          "lhs" : "i",
+          "expression" : "0"
+        }
+      ],
+      "outputSchema" : {
+        "type" : "object",
+        "properties" : {
+          "i" : {
+            "type" : "number"
+          }
+        }
+      },
+      "props" : { },
+      "script" : "import com.github.javafaker.Faker;\nimport com.github.javafaker.Name;\nimport java.util.HashMap;\nimport java.util.Map;\n\n  String ORG_NAME = \"_userInfo_.appOrgName\";\n  String PASSWORD = \"$2a$10$oSlVlCcW2l747wx8dMe8e.LEThugDTODUstU3wl0mGUYU5vKFuWUu\";\n\n  Faker f = new Faker();\n  Name name = f.name();\n\n  String firstName = user.firstName;\n  String lastName = user.lastName;\n  String userId = user.userId;\n  String email = user.email;\n\n  Map user = new HashMap();\n  user.put(\"emailVerified\", false);\n  user.put(\"firstName\", firstName);\n  user.put(\"lastName\", lastName);\n  user.put(\"role\", \"user\");\n  user.put(\"deleted\", false);\n  user.put(\"userId\", userId);\n  user.put(\"email\", email);\n  user.put(\"orgName\", ORG_NAME);\n  user.put(\"password\", PASSWORD);\n\n  user;\n"
+    },
+    {
+      "name" : "E",
+      "type" : "end",
+      "outputSchema" : {
+        "type" : "object",
+        "properties" : {
+          "_rtag" : {
+            "type" : "string"
+          },
+          "failed" : {
+            "type" : "boolean"
+          },
+          "message" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  ]
+}
